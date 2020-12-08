@@ -1,0 +1,187 @@
+
+html {
+    background-color: #fcf8ec;
+    font-family: 'ABeeZee', sans-serif;
+    
+}
+
+header {
+    background-color: #456268;
+}
+
+.caixa {
+    display: flex;
+    height: 70px;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    color: #d0e8f2; 
+    text-align: center;
+    font-size: 30px;
+}
+
+h1:hover{
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+}
+
+.caixa nav a {
+    text-decoration: none;
+    color: #2f2e2e;
+    border-style: solid;
+    border-width: 1px;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-color: #2f2e2e; 
+    background-color: #d0e8f2;
+    padding: 5px;
+    margin: 5px;
+}
+
+.caixa nav a:hover{
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: #e5ecee;
+    color: #456268;
+    animation-name: expand;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+} 
+
+  @keyframes expand {
+    100% {
+      background-color:#badfe9;
+      font-size: 20px;
+    }
+  }
+
+
+/* ============ tag do grid principal  ===============*/
+main {
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.main-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* ============ tag de manipulação dos a's  ===============*/
+
+main nav a {
+    background-color: #456268;
+    width: 220px;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* ============ tag imagem ===============*/
+img{
+    width: 220px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* ============ tag hover imagem ===============*/
+
+img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #bdddeb;
+}
+
+/* ============ tag footer ===============*/
+
+footer {
+    width: 100%;
+    background-color: #456268;
+    position: relative;
+    bottom:0;
+    text-align: center;
+}
+
+/* ============ tag pai dos icones ===============*/
+
+.footer-box{
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ============ tag dos icones ===============*/
+
+i {
+    color: #d0e8f2;
+    font-size: 25px;
+    padding: 15px 0;
+}
+
+/* ============ tag hover dos icones ===============*/
+
+i:hover{
+    font-weight: bold;
+}
+
+.div-footer{
+    font-family: verdana;
+    color: #d0e8f2;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ============ parte mobile ===============*/
+
+
+@media (max-width: 400px) {
+    html{
+        background-color: pink;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+
+    .caixa{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    }   
+
+@media (min-width: 900px) and (max-width:1100px){
+    main {
+        width: 100%;
+    }
+}
+
+@media(max-width: 1100px){
+    .main-nav {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media (max-width: 800px){
+    .footer-box{
+        width: 70%;
+        justify-content: space-around;
+    }
+}
+
